@@ -1,0 +1,45 @@
+1.what is operating system?
+operating system is something that acts b/w as a bridge hardware and software
+-> we have 3 types of os
+   1.Windows
+   2.Linux/unix
+   3.Mac
+
+2.what is linux and why it is popular?
+Linux is a operating system that acts as a bridge b/w hardware and software
+-> it is a free and open source os
+-> it is very secure 
+     ex: we cant even install any anti virus mallware software
+-> it is very faster
+
+3.Diff b/w linux and windows?
+Linux is a operating system that acts as a bridge b/w hardware and software
+-> it is a free and open source os
+-> developed by linus torvalds
+-> it is very secure
+     ex: we cant even install any anti virus mallware software
+-> it is very faster
+
+Windows is a operating system that acts as a bridge b/w hardware and software
+-> it is a proprietary source os
+-> it was developed by microsoft
+-> it is low secure
+     ex: we install anti virus mallware software
+-> it is less faster
+-> windows uses GUI
+
+4.explin the architecture of linux?
+-> kernal
+-> system libraries
+-> compilers 
+-> processing 
+-> software systems
+
+5.what is kernal.explain its importance?
+-> kernal is heart of os
+-> kernal acts as interface  b/w hardware and software
+-> its mainly focused on 4 major points
+    # device management
+    # memory management
+    # processing management
+    # handling process related systems
