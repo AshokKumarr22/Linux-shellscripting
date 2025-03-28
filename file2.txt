@@ -1,0 +1,27 @@
+SSH CONSOLE:
+----------
+-> ssh means secure shell
+-> ssh is a protocal allows 2 computers to communicate securely over a network
+
+
+telnet vs ssh:
+------------
+-> telnet is used only connection testing
+-> ssh connects to the server to communicate for doing actions
+
+
+ssh configuration :
+----------------
+-> ssh-keygen -t RSA -b 2048
+   ssh-keygen -t RSA -b 4096
+ssh access command:
+-----------------
+-> ssh -i<privatekey> user@ip address
+
+
+process :
+-------
+# By using ssh ,we send a request to aws
+# It generate a public key and private key ..it takes public key and send public key to client machine
+# By using private key,we connect to the server 
+
