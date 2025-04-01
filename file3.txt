@@ -1,0 +1,80 @@
+Linux commands:
+------------
+1.touch
+2.vi
+3.vim
+4.rm
+5.rm-r
+6.mkdir
+7.rmdir
+8.ls
+  ls -al
+9.man
+10.cat
+   cat > filename
+11.ps
+12.top
+13.df -h
+14.free
+15.nproc
+16.cd
+17.pwd
+18.grep
+19.awk
+20.pipe
+21.curl
+22.wget
+23.cp
+24.mv
+25.find
+26.location
+27.whoami
+28.uname
+29.date
+30.cal
+
+Sudo :
+----
+-> we have 3 types of users
+   1.rootuser 2.system user(ubuntu user) 3.customer user(normal user)
+-> only rootuser have all permissions to add ,create,delete anything
+-> by using sudo command ,we can privielage some actions in system user and normal user
+SUDO COMMANDS :
+------------
+1. awk -F ':' '{print $1}' /etc/passwd : to check all the users list
+2. id username : to check the id of particular user
+3. cat/etc/passwd : to check the id of all users/this command gives the data of the file
+
+Adding newuser in ubuntu/normal user:
+---------------------------------
+4. sudo useradd -m -s /bin/bash username : to add a newuser
+Adding newuser in rootuser:
+------------------------
+4.useradd username : to add a newuser
+
+password :
+-------
+5.sudo passwd username : to set the passwd
+  passwd username
+
+Del the user :
+----------
+6. sudo userdel username : to delete the user
+   sudo userdel -r username : to delete the user forcefully
+
+#Change mode:
+-----------
+7. sudo usermod -u newid username : to change mode of userid
+   sudo usermod -g newgroupid username : to change mode of user groupid
+   sudo usermod -l loginid username :  to change mode of user login id
+   sudo usermod -d newdirectorypath username : to change mode of user directorypath
+
+8.su username : switchuser -switch to another user
+9.sudo -i : switch to rootuser
+
+
+
+
+
+
+
