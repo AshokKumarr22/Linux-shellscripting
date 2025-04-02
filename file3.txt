@@ -9,6 +9,7 @@ Linux commands:
 7.rmdir
 8.ls
   ls -al
+  ls -ltr
 9.man
 10.cat
    cat > filename
@@ -18,6 +19,8 @@ Linux commands:
 14.free
 15.nproc
 16.cd
+   cd ..
+   cd ~
 17.pwd
 18.grep
 19.awk
@@ -25,6 +28,7 @@ Linux commands:
 21.curl
 22.wget
 23.cp
+   cp -r
 24.mv
 25.find
 26.location
@@ -32,6 +36,9 @@ Linux commands:
 28.uname
 29.date
 30.cal
+31.chmod 
+32.chown
+
 
 Sudo :
 ----
@@ -39,38 +46,33 @@ Sudo :
    1.rootuser 2.system user(ubuntu user) 3.customer user(normal user)
 -> only rootuser have all permissions to add ,create,delete anything
 -> by using sudo command ,we can privielage some actions in system user and normal user
+
+
 SUDO COMMANDS :
 ------------
 1. awk -F ':' '{print $1}' /etc/passwd : to check all the users list
 2. id username : to check the id of particular user
 3. cat/etc/passwd : to check the id of all users/this command gives the data of the file
-
-Adding newuser in ubuntu/normal user:
----------------------------------
-4. sudo useradd -m -s /bin/bash username : to add a newuser
-Adding newuser in rootuser:
-------------------------
-4.useradd username : to add a newuser
-
-password :
--------
-5.sudo passwd username : to set the passwd
-  passwd username
-
-Del the user :
-----------
-6. sudo userdel username : to delete the user
+4.su username : switchuser -switch to another user
+5.sudo -i : switch to rootuser
+6.Adding newuser :
+   -----------
+   sudo useradd -m -s /bin/bash username : to add a newuser on ubuntu/normal user
+   useradd username : to add a newuser on root
+7.password :
+   ------
+   sudo passwd username : to set the passwd on normaluser
+   passwd username : on root 
+8.Del the user :
+    -------
+   sudo userdel username : to delete the user
    sudo userdel -r username : to delete the user forcefully
-
-#Change mode:
------------
-7. sudo usermod -u newid username : to change mode of userid
+9.Change mode:
+   ---------
+   sudo usermod -u newid username : to change mode of userid
    sudo usermod -g newgroupid username : to change mode of user groupid
    sudo usermod -l loginid username :  to change mode of user login id
    sudo usermod -d newdirectorypath username : to change mode of user directorypath
-
-8.su username : switchuser -switch to another user
-9.sudo -i : switch to rootuser
 
 
 
