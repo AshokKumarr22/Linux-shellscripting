@@ -47,7 +47,6 @@ Sudo :
 -> only rootuser have all permissions to add ,create,delete anything
 -> by using sudo command ,we can privielage some actions in system user and normal user
 
-
 SUDO COMMANDS :
 ------------
 1. awk -F ':' '{print $1}' /etc/passwd : to check all the users list
