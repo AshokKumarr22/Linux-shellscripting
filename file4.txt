@@ -1,0 +1,93 @@
+SHELL:
+----
+shell is a command line interpreter that acts as a translator b/w user and kernal
+-> It takes the commands from the user and send them to kernal and send back to user 
+-> i.e; it converts the user language into machine language for understanding kernal and sends backs to user
+
+
+SHELL SCRIPTING:
+--------------
+shell scripting is a set of shell commands to automate tasks
+->automate tasks like file manipulation,updates,backup process
+->it run all the commands at a time 
+->it saves time and avoid mistakes
+
+
+SHELL TYPES:
+---------
+1.Bash
+2.sh
+3.ksh
+4.csh
+5.zsh
+->bash shell is the most widely used default shell
+->we can execute the scripts by using bash shell
+
+
+SHEBANG(#!):
+----------
+sheband line is the first line in shell script that tells the path to os to use bash to run the script
+
+
+what is command line interpreter?
+command line interpreter is a program that works 
+#to read what u want
+#it executes the script
+#and shows the output
+
+
+what are commandline arguments/parameters?
+They are the values that pass into a script when we run it by using some commands
+1.$0 - it tells the name of the script
+2.$1 - it tells the first arguments
+3.$2 - it tells the second arguments
+4.$n - it tells the $1,$2 arguments
+5.$# - it tells the total arguments in numbers
+6.$@ - it tells all the arguments in separate entry
+7.$* - it tells all the arguments in single entry
+8.$? - it tells the status of last command
+$1 $2 are positional parameters
+
+
+diff b/w " " and ' '
+" " :
+---
+->It gives the output what u entered inside
+->it allows both variable and numerical substitution
+' ' :
+---
+->it treats everything inside as literal text
+->it prints as it is
+
+
+diff b/w exit and return
+exit :
+---
+-> it is used to stop the entire script 
+-> to stop the whole script we use exit command
+return :
+-----
+-> it is used only inside the function
+-> it returns from the function ,not the script
+
+
+What is set -e used for in a script?
+→ It stops the script if any command fails.
+
+
+How can you debug a shell script?
+→ Add set -x at the top to print each command before it runs.
+
+
+How do you search for a string in a file using shell?
+grep "text" filename
+
+
+
+
+
+
+
+
+
+
