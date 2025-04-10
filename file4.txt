@@ -83,9 +83,12 @@ How do you search for a string in a file using shell?
 grep "text" filename
 
 
-
-
-
+what are cronjobs..how we use it
+cronjob are used to run automation tasks at a scheduled time by using crontab -e command
+crontab -l : to list all the crontab process
+crontab -e : to edit the cronjab
+crontab -r : to remove existed cronjob
+cronjob -e -u : for specific user
 
 
 
